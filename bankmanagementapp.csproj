@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{824DB52F-32D2-4F61-B785-A9EE55133829}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>windowsformapptry1</RootNamespace>
+    <AssemblyName>windowsformapptry1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.52">
+      <HintPath>.\Bunifu_UI_v1.52.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="adminkullaniciekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminkullaniciekle.Designer.cs">
+      <DependentUpon>adminkullaniciekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="adminpanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="adminpanel.Designer.cs">
+      <DependentUpon>adminpanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bilgilerimigoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bilgilerimigoruntule.Designer.cs">
+      <DependentUpon>bilgilerimigoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Button_WOC.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="loginn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginn.Designer.cs">
+      <DependentUpon>loginn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kredicek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kredicek.Designer.cs">
+      <DependentUpon>kredicek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciguncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciguncelle.Designer.cs">
+      <DependentUpon>kullaniciguncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicihesaphareketleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicihesaphareketleri.Designer.cs">
+      <DependentUpon>kullanicihesaphareketleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicikaldir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicikaldir.Designer.cs">
+      <DependentUpon>kullanicikaldir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicilarigoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicilarigoruntule.Designer.cs">
+      <DependentUpon>kullanicilarigoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullanicipanel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullanicipanel.Designer.cs">
+      <DependentUpon>kullanicipanel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kullaniciparayatırcek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kullaniciparayatırcek.Designer.cs">
+      <DependentUpon>kullaniciparayatırcek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paratransferi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paratransferi.Designer.cs">
+      <DependentUpon>paratransferi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="paratransferlerinigoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="paratransferlerinigoruntule.Designer.cs">
+      <DependentUpon>paratransferlerinigoruntule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="sifredegistir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sifredegistir.Designer.cs">
+      <DependentUpon>sifredegistir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="sistemistatistikleri.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="sistemistatistikleri.Designer.cs">
+      <DependentUpon>sistemistatistikleri.cs</DependentUpon>
+    </Compile>
+    <Compile Include="verilenkredilerigoruntule.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="verilenkredilerigoruntule.Designer.cs">
+      <DependentUpon>verilenkredilerigoruntule.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="adminkullaniciekle.resx">
+      <DependentUpon>adminkullaniciekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="adminpanel.resx">
+      <DependentUpon>adminpanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bilgilerimigoruntule.resx">
+      <DependentUpon>bilgilerimigoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginn.resx">
+      <DependentUpon>loginn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kredicek.resx">
+      <DependentUpon>kredicek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciguncelle.resx">
+      <DependentUpon>kullaniciguncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicihesaphareketleri.resx">
+      <DependentUpon>kullanicihesaphareketleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicikaldir.resx">
+      <DependentUpon>kullanicikaldir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicilarigoruntule.resx">
+      <DependentUpon>kullanicilarigoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullanicipanel.resx">
+      <DependentUpon>kullanicipanel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kullaniciparayatırcek.resx">
+      <DependentUpon>kullaniciparayatırcek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paratransferi.resx">
+      <DependentUpon>paratransferi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="paratransferlerinigoruntule.resx">
+      <DependentUpon>paratransferlerinigoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="sifredegistir.resx">
+      <DependentUpon>sifredegistir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sistemistatistikleri.resx">
+      <DependentUpon>sistemistatistikleri.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="verilenkredilerigoruntule.resx">
+      <DependentUpon>verilenkredilerigoruntule.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\my60FROR.jpeg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
